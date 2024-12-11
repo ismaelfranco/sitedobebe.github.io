@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá Revelação - [Nome do Bebê]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chá Revelação de [Nome do Bebê]</h1>
+        <p>Venha celebrar com a gente!</p>
+    </header>
+
+    <section id="confirmacao-presenca">
+        <h2>Confirme sua presença</h2>
+        <button id="confirmar" onclick="confirmarPresenca()">Confirmar presença</button>
+    </section>
+
+    <section id="escolha-presente">
+        <h2>Escolha seu presente</h2>
+        
+        <div id="etapa-1">
+            <h3>Escolha o tipo de fralda</h3>
+            <select id="fraldas">
+                <option value="fralda1">Fralda Tipo 1</option>
+                <option value="fralda2">Fralda Tipo 2</option>
+                <option value="fralda3">Fralda Tipo 3</option>
+            </select>
+            <button onclick="avancarEtapa()">Próxima Etapa</button>
+        </div>
+
+        <div id="etapa-2" style="display:none;">
+            <h3>Escolha outro presente (não fralda)</h3>
+            <select id="outros-presentes">
+                <option value="presente1">Brinquedo 1</option>
+                <option value="presente2">Roupinha 1</option>
+                <option value="presente3">Cadeira de carro</option>
+            </select>
+            <button onclick="finalizarEscolha()">Finalizar</button>
+        </div>
+    </section>
+
+    <section id="informacoes">
+        <h2>Informações do Evento</h2>
+        <p><strong>Data:</strong> [Data do Evento]</p>
+        <p><strong>Endereço:</strong> <a href="https://www.google.com/maps?q=[Endereço]" target="_blank">[Endereço Completo]</a></p>
+        <p><strong>Contato:</strong> [Seu nome] - [Seu número de telefone]</p>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria da Mamãe</h2>
+        <img src="imagem1.jpg" alt="Imagem da Mamãe 1">
+        <img src="imagem2.jpg" alt="Imagem da Mamãe 2">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chá Revelação de [Nome do Bebê]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
